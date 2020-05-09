@@ -1,0 +1,2962 @@
+{
+    "version" : "1.4.0",
+    "project" : {
+        "name" : "EventHubStreaming",
+        "directory" : "C:\\Users\\anildwa\\source\\repos\\EventHubStreaming",
+        "workspaceDir" : "C:\\Users\\anildwa\\source\\repos\\EventHubStreaming",
+        "sources" : [
+            "C:\\Users\\anildwa\\source\\repos\\EventHubStreaming\\src\\main\\scala"
+        ],
+        "dependencies" : [
+        ],
+        "classpath" : [
+            "C:\\Users\\anildwa\\source\\repos\\EventHubStreaming\\target\\classes",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\scala-library\\2.11.6\\scala-library-2.11.6.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\io\\delta\\delta-core_2.11\\0.5.0\\delta-core_2.11-0.5.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\antlr\\antlr4\\4.7\\antlr4-4.7.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\antlr\\antlr-runtime\\3.5.2\\antlr-runtime-3.5.2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\antlr\\ST4\\4.0.8\\ST4-4.0.8.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\abego\\treelayout\\org.abego.treelayout.core\\1.0.3\\org.abego.treelayout.core-1.0.3.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\javax.json\\1.0.4\\javax.json-1.0.4.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\ibm\\icu\\icu4j\\58.2\\icu4j-58.2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\antlr\\antlr4-runtime\\4.7\\antlr4-runtime-4.7.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-sql-kafka-0-10_2.11\\2.4.5\\spark-sql-kafka-0-10_2.11-2.4.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-tags_2.11\\2.4.5\\spark-tags_2.11-2.4.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\spark-project\\spark\\unused\\1.0.0\\unused-1.0.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-sql_2.11\\2.4.5\\spark-sql_2.11-2.4.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\univocity\\univocity-parsers\\2.7.3\\univocity-parsers-2.7.3.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-sketch_2.11\\2.4.5\\spark-sketch_2.11-2.4.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-core_2.11\\2.4.5\\spark-core_2.11-2.4.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\thoughtworks\\paranamer\\paranamer\\2.8\\paranamer-2.8.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\avro\\avro\\1.8.2\\avro-1.8.2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\commons\\commons-compress\\1.8.1\\commons-compress-1.8.1.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\tukaani\\xz\\1.5\\xz-1.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\avro\\avro-mapred\\1.8.2\\avro-mapred-1.8.2-hadoop2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\avro\\avro-ipc\\1.8.2\\avro-ipc-1.8.2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\twitter\\chill_2.11\\0.9.3\\chill_2.11-0.9.3.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\esotericsoftware\\kryo-shaded\\4.0.2\\kryo-shaded-4.0.2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\esotericsoftware\\minlog\\1.3.0\\minlog-1.3.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\objenesis\\objenesis\\2.5.1\\objenesis-2.5.1.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\twitter\\chill-java\\0.9.3\\chill-java-0.9.3.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-client\\2.6.5\\hadoop-client-2.6.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-common\\2.6.5\\hadoop-common-2.6.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\commons-cli\\commons-cli\\1.2\\commons-cli-1.2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\xmlenc\\xmlenc\\0.52\\xmlenc-0.52.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\commons-httpclient\\commons-httpclient\\3.1\\commons-httpclient-3.1.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\commons-io\\commons-io\\2.4\\commons-io-2.4.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\commons-collections\\commons-collections\\3.2.2\\commons-collections-3.2.2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\commons-configuration\\commons-configuration\\1.6\\commons-configuration-1.6.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\commons-digester\\commons-digester\\1.8\\commons-digester-1.8.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\commons-beanutils\\commons-beanutils\\1.7.0\\commons-beanutils-1.7.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\google\\code\\gson\\gson\\2.2.4\\gson-2.2.4.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-auth\\2.6.5\\hadoop-auth-2.6.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\httpcomponents\\httpclient\\4.2.5\\httpclient-4.2.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\httpcomponents\\httpcore\\4.2.4\\httpcore-4.2.4.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\directory\\server\\apacheds-kerberos-codec\\2.0.0-M15\\apacheds-kerberos-codec-2.0.0-M15.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\directory\\server\\apacheds-i18n\\2.0.0-M15\\apacheds-i18n-2.0.0-M15.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\directory\\api\\api-asn1-api\\1.0.0-M20\\api-asn1-api-1.0.0-M20.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\directory\\api\\api-util\\1.0.0-M20\\api-util-1.0.0-M20.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\curator\\curator-client\\2.6.0\\curator-client-2.6.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\htrace\\htrace-core\\3.0.4\\htrace-core-3.0.4.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-hdfs\\2.6.5\\hadoop-hdfs-2.6.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\mortbay\\jetty\\jetty-util\\6.1.26\\jetty-util-6.1.26.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\xerces\\xercesImpl\\2.9.1\\xercesImpl-2.9.1.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\xml-apis\\xml-apis\\1.3.04\\xml-apis-1.3.04.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-mapreduce-client-app\\2.6.5\\hadoop-mapreduce-client-app-2.6.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-mapreduce-client-common\\2.6.5\\hadoop-mapreduce-client-common-2.6.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-yarn-client\\2.6.5\\hadoop-yarn-client-2.6.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-yarn-server-common\\2.6.5\\hadoop-yarn-server-common-2.6.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-mapreduce-client-shuffle\\2.6.5\\hadoop-mapreduce-client-shuffle-2.6.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-yarn-api\\2.6.5\\hadoop-yarn-api-2.6.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-mapreduce-client-core\\2.6.5\\hadoop-mapreduce-client-core-2.6.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-yarn-common\\2.6.5\\hadoop-yarn-common-2.6.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\javax\\xml\\bind\\jaxb-api\\2.2.2\\jaxb-api-2.2.2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\javax\\xml\\stream\\stax-api\\1.0-2\\stax-api-1.0-2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\codehaus\\jackson\\jackson-jaxrs\\1.9.13\\jackson-jaxrs-1.9.13.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\codehaus\\jackson\\jackson-xc\\1.9.13\\jackson-xc-1.9.13.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-mapreduce-client-jobclient\\2.6.5\\hadoop-mapreduce-client-jobclient-2.6.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-annotations\\2.6.5\\hadoop-annotations-2.6.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-launcher_2.11\\2.4.5\\spark-launcher_2.11-2.4.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-kvstore_2.11\\2.4.5\\spark-kvstore_2.11-2.4.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\fusesource\\leveldbjni\\leveldbjni-all\\1.8\\leveldbjni-all-1.8.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-network-common_2.11\\2.4.5\\spark-network-common_2.11-2.4.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-network-shuffle_2.11\\2.4.5\\spark-network-shuffle_2.11-2.4.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-unsafe_2.11\\2.4.5\\spark-unsafe_2.11-2.4.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\javax\\activation\\activation\\1.1.1\\activation-1.1.1.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\curator\\curator-recipes\\2.6.0\\curator-recipes-2.6.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\curator\\curator-framework\\2.6.0\\curator-framework-2.6.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\google\\guava\\guava\\16.0.1\\guava-16.0.1.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\zookeeper\\zookeeper\\3.4.6\\zookeeper-3.4.6.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\javax\\servlet\\javax.servlet-api\\3.1.0\\javax.servlet-api-3.1.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\commons\\commons-lang3\\3.5\\commons-lang3-3.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\commons\\commons-math3\\3.4.1\\commons-math3-3.4.1.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\google\\code\\findbugs\\jsr305\\1.3.9\\jsr305-1.3.9.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\slf4j\\jul-to-slf4j\\1.7.16\\jul-to-slf4j-1.7.16.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\slf4j\\jcl-over-slf4j\\1.7.16\\jcl-over-slf4j-1.7.16.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\log4j\\log4j\\1.2.17\\log4j-1.2.17.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\slf4j\\slf4j-log4j12\\1.7.16\\slf4j-log4j12-1.7.16.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\ning\\compress-lzf\\1.0.3\\compress-lzf-1.0.3.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\roaringbitmap\\RoaringBitmap\\0.7.45\\RoaringBitmap-0.7.45.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\roaringbitmap\\shims\\0.7.45\\shims-0.7.45.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\commons-net\\commons-net\\3.1\\commons-net-3.1.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\json4s\\json4s-jackson_2.11\\3.5.3\\json4s-jackson_2.11-3.5.3.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\json4s\\json4s-core_2.11\\3.5.3\\json4s-core_2.11-3.5.3.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\json4s\\json4s-ast_2.11\\3.5.3\\json4s-ast_2.11-3.5.3.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\json4s\\json4s-scalap_2.11\\3.5.3\\json4s-scalap_2.11-3.5.3.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\core\\jersey-client\\2.22.2\\jersey-client-2.22.2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\javax\\ws\\rs\\javax.ws.rs-api\\2.0.1\\javax.ws.rs-api-2.0.1.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\hk2\\hk2-api\\2.4.0-b34\\hk2-api-2.4.0-b34.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\hk2\\hk2-utils\\2.4.0-b34\\hk2-utils-2.4.0-b34.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\hk2\\external\\aopalliance-repackaged\\2.4.0-b34\\aopalliance-repackaged-2.4.0-b34.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\hk2\\external\\javax.inject\\2.4.0-b34\\javax.inject-2.4.0-b34.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\hk2\\hk2-locator\\2.4.0-b34\\hk2-locator-2.4.0-b34.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\javassist\\javassist\\3.18.1-GA\\javassist-3.18.1-GA.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\core\\jersey-common\\2.22.2\\jersey-common-2.22.2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\javax\\annotation\\javax.annotation-api\\1.2\\javax.annotation-api-1.2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\bundles\\repackaged\\jersey-guava\\2.22.2\\jersey-guava-2.22.2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\hk2\\osgi-resource-locator\\1.0.1\\osgi-resource-locator-1.0.1.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\core\\jersey-server\\2.22.2\\jersey-server-2.22.2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\media\\jersey-media-jaxb\\2.22.2\\jersey-media-jaxb-2.22.2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\javax\\validation\\validation-api\\1.1.0.Final\\validation-api-1.1.0.Final.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\containers\\jersey-container-servlet\\2.22.2\\jersey-container-servlet-2.22.2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\containers\\jersey-container-servlet-core\\2.22.2\\jersey-container-servlet-core-2.22.2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\io\\netty\\netty-all\\4.1.42.Final\\netty-all-4.1.42.Final.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\io\\netty\\netty\\3.9.9.Final\\netty-3.9.9.Final.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\clearspring\\analytics\\stream\\2.7.0\\stream-2.7.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\io\\dropwizard\\metrics\\metrics-core\\3.1.5\\metrics-core-3.1.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\io\\dropwizard\\metrics\\metrics-jvm\\3.1.5\\metrics-jvm-3.1.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\io\\dropwizard\\metrics\\metrics-json\\3.1.5\\metrics-json-3.1.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\io\\dropwizard\\metrics\\metrics-graphite\\3.1.5\\metrics-graphite-3.1.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\fasterxml\\jackson\\module\\jackson-module-scala_2.11\\2.6.7.1\\jackson-module-scala_2.11-2.6.7.1.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\fasterxml\\jackson\\module\\jackson-module-paranamer\\2.7.9\\jackson-module-paranamer-2.7.9.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\ivy\\ivy\\2.4.0\\ivy-2.4.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\oro\\oro\\2.0.8\\oro-2.0.8.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\net\\razorvine\\pyrolite\\4.13\\pyrolite-4.13.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\net\\sf\\py4j\\py4j\\0.10.7\\py4j-0.10.7.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\commons\\commons-crypto\\1.0.0\\commons-crypto-1.0.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-catalyst_2.11\\2.4.5\\spark-catalyst_2.11-2.4.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\modules\\scala-parser-combinators_2.11\\1.1.0\\scala-parser-combinators_2.11-1.1.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\codehaus\\janino\\janino\\3.0.9\\janino-3.0.9.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\codehaus\\janino\\commons-compiler\\3.0.9\\commons-compiler-3.0.9.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\commons-codec\\commons-codec\\1.10\\commons-codec-1.10.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\orc\\orc-core\\1.5.5\\orc-core-1.5.5-nohive.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\orc\\orc-shims\\1.5.5\\orc-shims-1.5.5.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\google\\protobuf\\protobuf-java\\2.5.0\\protobuf-java-2.5.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\commons-lang\\commons-lang\\2.6\\commons-lang-2.6.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\io\\airlift\\aircompressor\\0.10\\aircompressor-0.10.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\orc\\orc-mapreduce\\1.5.5\\orc-mapreduce-1.5.5-nohive.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\parquet\\parquet-column\\1.10.1\\parquet-column-1.10.1.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\parquet\\parquet-common\\1.10.1\\parquet-common-1.10.1.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\parquet\\parquet-encoding\\1.10.1\\parquet-encoding-1.10.1.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\parquet\\parquet-hadoop\\1.10.1\\parquet-hadoop-1.10.1.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\parquet\\parquet-format\\2.4.0\\parquet-format-2.4.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\parquet\\parquet-jackson\\1.10.1\\parquet-jackson-1.10.1.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\codehaus\\jackson\\jackson-mapper-asl\\1.9.13\\jackson-mapper-asl-1.9.13.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\codehaus\\jackson\\jackson-core-asl\\1.9.13\\jackson-core-asl-1.9.13.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.6.7.3\\jackson-databind-2.6.7.3.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.6.0\\jackson-annotations-2.6.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-core\\2.6.7\\jackson-core-2.6.7.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\arrow\\arrow-vector\\0.10.0\\arrow-vector-0.10.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\arrow\\arrow-format\\0.10.0\\arrow-format-0.10.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\arrow\\arrow-memory\\0.10.0\\arrow-memory-0.10.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\joda-time\\joda-time\\2.9.9\\joda-time-2.9.9.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\carrotsearch\\hppc\\0.7.2\\hppc-0.7.2.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\vlkan\\flatbuffers\\1.2.0-3f79e055\\flatbuffers-1.2.0-3f79e055.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\xbean\\xbean-asm6-shaded\\4.8\\xbean-asm6-shaded-4.8.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\kafka\\kafka-clients\\2.5.0\\kafka-clients-2.5.0.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\com\\github\\luben\\zstd-jni\\1.4.4-7\\zstd-jni-1.4.4-7.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\lz4\\lz4-java\\1.7.1\\lz4-java-1.7.1.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\xerial\\snappy\\snappy-java\\1.1.7.3\\snappy-java-1.1.7.3.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.30\\slf4j-api-1.7.30.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\scala-reflect\\2.11.12\\scala-reflect-2.11.12.jar",
+            "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\modules\\scala-xml_2.11\\1.0.6\\scala-xml_2.11-1.0.6.jar"
+        ],
+        "out" : "C:\\Users\\anildwa\\source\\repos\\EventHubStreaming\\target",
+        "classesDir" : "C:\\Users\\anildwa\\source\\repos\\EventHubStreaming\\target\\classes",
+        "resources" : [
+        ],
+        "scala" : {
+            "organization" : "org.scala-lang",
+            "name" : "scala-compiler",
+            "version" : "2.11.6",
+            "options" : [
+            ],
+            "jars" : [
+                "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\scala-library\\2.11.6\\scala-library-2.11.6.jar",
+                "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\scala-compiler\\2.11.6\\scala-compiler-2.11.6.jar",
+                "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\modules\\scala-parser-combinators_2.11\\1.0.3\\scala-parser-combinators_2.11-1.0.3.jar",
+                "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\scala-library\\2.11.2\\scala-library-2.11.2.jar",
+                "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\scala-reflect\\2.11.6\\scala-reflect-2.11.6.jar",
+                "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\modules\\scala-xml_2.11\\1.0.3\\scala-xml_2.11-1.0.3.jar",
+                "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\scala-library\\2.11.4\\scala-library-2.11.4.jar"
+            ],
+            "setup" : {
+                "order" : "mixed",
+                "addLibraryToBootClasspath" : true,
+                "addCompilerToClasspath" : false,
+                "addExtraJarsToClasspath" : false,
+                "manageBootClasspath" : true,
+                "filterLibraryFromClasspath" : true
+            }
+        },
+        "java" : {
+            "options" : [
+                "-g",
+                "-target",
+                "1.8",
+                "-source",
+                "1.8",
+                "-encoding",
+                "UTF-8"
+            ]
+        },
+        "test" : {
+            "frameworks" : [
+                {
+                    "names" : [
+                        "com.novocode.junit.JUnitFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.scalatest.tools.Framework",
+                        "org.scalatest.tools.ScalaTestFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.scalacheck.ScalaCheckFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "org.specs.runner.SpecsFramework",
+                        "org.specs2.runner.Specs2Framework",
+                        "org.specs2.runner.SpecsFramework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "utest.runner.Framework"
+                    ]
+                },
+                {
+                    "names" : [
+                        "munit.Framework"
+                    ]
+                }
+            ],
+            "options" : {
+                "excludes" : [
+                ],
+                "arguments" : [
+                    {
+                        "args" : [
+                            "-v",
+                            "-a"
+                        ],
+                        "framework" : {
+                            "names" : [
+                                "com.novocode.junit.JUnitFramework"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "platform" : {
+            "name" : "jvm",
+            "config" : {
+                "home" : "C:\\Users\\anildwa\\AppData\\Local\\Programs\\AdoptOpenJDK\\jre",
+                "options" : [
+                ]
+            },
+            "mainClass" : [
+            ]
+        },
+        "resolution" : {
+            "modules" : [
+                {
+                    "organization" : "org.apache.commons",
+                    "name" : "commons-math3",
+                    "version" : "3.4.1",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-math3",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\commons\\commons-math3\\3.4.1\\commons-math3-3.4.1.jar"
+                        },
+                        {
+                            "name" : "commons-math3",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\commons\\commons-math3\\3.4.1\\commons-math3-3.4.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.xbean",
+                    "name" : "xbean-asm6-shaded",
+                    "version" : "4.8",
+                    "artifacts" : [
+                        {
+                            "name" : "xbean-asm6-shaded",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\xbean\\xbean-asm6-shaded\\4.8\\xbean-asm6-shaded-4.8.jar"
+                        },
+                        {
+                            "name" : "xbean-asm6-shaded",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\xbean\\xbean-asm6-shaded\\4.8\\xbean-asm6-shaded-4.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.slf4j",
+                    "name" : "slf4j-api",
+                    "version" : "1.7.30",
+                    "artifacts" : [
+                        {
+                            "name" : "slf4j-api",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.30\\slf4j-api-1.7.30.jar"
+                        },
+                        {
+                            "name" : "slf4j-api",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\slf4j\\slf4j-api\\1.7.30\\slf4j-api-1.7.30-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.kafka",
+                    "name" : "kafka-clients",
+                    "version" : "2.5.0",
+                    "artifacts" : [
+                        {
+                            "name" : "kafka-clients",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\kafka\\kafka-clients\\2.5.0\\kafka-clients-2.5.0.jar"
+                        },
+                        {
+                            "name" : "kafka-clients",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\kafka\\kafka-clients\\2.5.0\\kafka-clients-2.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.fusesource.leveldbjni",
+                    "name" : "leveldbjni-all",
+                    "version" : "1.8",
+                    "artifacts" : [
+                        {
+                            "name" : "leveldbjni-all",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\fusesource\\leveldbjni\\leveldbjni-all\\1.8\\leveldbjni-all-1.8.jar"
+                        },
+                        {
+                            "name" : "leveldbjni-all",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\fusesource\\leveldbjni\\leveldbjni-all\\1.8\\leveldbjni-all-1.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.htrace",
+                    "name" : "htrace-core",
+                    "version" : "3.0.4",
+                    "artifacts" : [
+                        {
+                            "name" : "htrace-core",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\htrace\\htrace-core\\3.0.4\\htrace-core-3.0.4.jar"
+                        },
+                        {
+                            "name" : "htrace-core",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\htrace\\htrace-core\\3.0.4\\htrace-core-3.0.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.spark",
+                    "name" : "spark-unsafe_2.11",
+                    "version" : "2.4.5",
+                    "artifacts" : [
+                        {
+                            "name" : "spark-unsafe_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-unsafe_2.11\\2.4.5\\spark-unsafe_2.11-2.4.5.jar"
+                        },
+                        {
+                            "name" : "spark-unsafe_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-unsafe_2.11\\2.4.5\\spark-unsafe_2.11-2.4.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.hadoop",
+                    "name" : "hadoop-client",
+                    "version" : "2.6.5",
+                    "artifacts" : [
+                        {
+                            "name" : "hadoop-client",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-client\\2.6.5\\hadoop-client-2.6.5.jar"
+                        },
+                        {
+                            "name" : "hadoop-client",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-client\\2.6.5\\hadoop-client-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.specs2",
+                    "name" : "specs2-fp_2.11",
+                    "version" : "4.2.0",
+                    "artifacts" : [
+                        {
+                            "name" : "specs2-fp_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\specs2\\specs2-fp_2.11\\4.2.0\\specs2-fp_2.11-4.2.0.jar"
+                        },
+                        {
+                            "name" : "specs2-fp_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\specs2\\specs2-fp_2.11\\4.2.0\\specs2-fp_2.11-4.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.dropwizard.metrics",
+                    "name" : "metrics-jvm",
+                    "version" : "3.1.5",
+                    "artifacts" : [
+                        {
+                            "name" : "metrics-jvm",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\io\\dropwizard\\metrics\\metrics-jvm\\3.1.5\\metrics-jvm-3.1.5.jar"
+                        },
+                        {
+                            "name" : "metrics-jvm",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\io\\dropwizard\\metrics\\metrics-jvm\\3.1.5\\metrics-jvm-3.1.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-digester",
+                    "name" : "commons-digester",
+                    "version" : "1.8",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-digester",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-digester\\commons-digester\\1.8\\commons-digester-1.8.jar"
+                        },
+                        {
+                            "name" : "commons-digester",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-digester\\commons-digester\\1.8\\commons-digester-1.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.json4s",
+                    "name" : "json4s-core_2.11",
+                    "version" : "3.5.3",
+                    "artifacts" : [
+                        {
+                            "name" : "json4s-core_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\json4s\\json4s-core_2.11\\3.5.3\\json4s-core_2.11-3.5.3.jar"
+                        },
+                        {
+                            "name" : "json4s-core_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\json4s\\json4s-core_2.11\\3.5.3\\json4s-core_2.11-3.5.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.jersey.containers",
+                    "name" : "jersey-container-servlet-core",
+                    "version" : "2.22.2",
+                    "artifacts" : [
+                        {
+                            "name" : "jersey-container-servlet-core",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\containers\\jersey-container-servlet-core\\2.22.2\\jersey-container-servlet-core-2.22.2.jar"
+                        },
+                        {
+                            "name" : "jersey-container-servlet-core",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\containers\\jersey-container-servlet-core\\2.22.2\\jersey-container-servlet-core-2.22.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.hadoop",
+                    "name" : "hadoop-mapreduce-client-common",
+                    "version" : "2.6.5",
+                    "artifacts" : [
+                        {
+                            "name" : "hadoop-mapreduce-client-common",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-mapreduce-client-common\\2.6.5\\hadoop-mapreduce-client-common-2.6.5.jar"
+                        },
+                        {
+                            "name" : "hadoop-mapreduce-client-common",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-mapreduce-client-common\\2.6.5\\hadoop-mapreduce-client-common-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.json4s",
+                    "name" : "json4s-jackson_2.11",
+                    "version" : "3.5.3",
+                    "artifacts" : [
+                        {
+                            "name" : "json4s-jackson_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\json4s\\json4s-jackson_2.11\\3.5.3\\json4s-jackson_2.11-3.5.3.jar"
+                        },
+                        {
+                            "name" : "json4s-jackson_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\json4s\\json4s-jackson_2.11\\3.5.3\\json4s-jackson_2.11-3.5.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.codehaus.jackson",
+                    "name" : "jackson-core-asl",
+                    "version" : "1.9.13",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-core-asl",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\codehaus\\jackson\\jackson-core-asl\\1.9.13\\jackson-core-asl-1.9.13.jar"
+                        },
+                        {
+                            "name" : "jackson-core-asl",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\codehaus\\jackson\\jackson-core-asl\\1.9.13\\jackson-core-asl-1.9.13-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.spark",
+                    "name" : "spark-tags_2.11",
+                    "version" : "2.4.5",
+                    "artifacts" : [
+                        {
+                            "name" : "spark-tags_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-tags_2.11\\2.4.5\\spark-tags_2.11-2.4.5.jar"
+                        },
+                        {
+                            "name" : "spark-tags_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-tags_2.11\\2.4.5\\spark-tags_2.11-2.4.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "javax.annotation",
+                    "name" : "javax.annotation-api",
+                    "version" : "1.2",
+                    "artifacts" : [
+                        {
+                            "name" : "javax.annotation-api",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\javax\\annotation\\javax.annotation-api\\1.2\\javax.annotation-api-1.2.jar"
+                        },
+                        {
+                            "name" : "javax.annotation-api",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\javax\\annotation\\javax.annotation-api\\1.2\\javax.annotation-api-1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.commons",
+                    "name" : "commons-crypto",
+                    "version" : "1.0.0",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-crypto",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\commons\\commons-crypto\\1.0.0\\commons-crypto-1.0.0.jar"
+                        },
+                        {
+                            "name" : "commons-crypto",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\commons\\commons-crypto\\1.0.0\\commons-crypto-1.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.dropwizard.metrics",
+                    "name" : "metrics-core",
+                    "version" : "3.1.5",
+                    "artifacts" : [
+                        {
+                            "name" : "metrics-core",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\io\\dropwizard\\metrics\\metrics-core\\3.1.5\\metrics-core-3.1.5.jar"
+                        },
+                        {
+                            "name" : "metrics-core",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\io\\dropwizard\\metrics\\metrics-core\\3.1.5\\metrics-core-3.1.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-lang",
+                    "name" : "commons-lang",
+                    "version" : "2.6",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-lang",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-lang\\commons-lang\\2.6\\commons-lang-2.6.jar"
+                        },
+                        {
+                            "name" : "commons-lang",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-lang\\commons-lang\\2.6\\commons-lang-2.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.core",
+                    "name" : "jackson-databind",
+                    "version" : "2.6.7.3",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-databind",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.6.7.3\\jackson-databind-2.6.7.3.jar"
+                        },
+                        {
+                            "name" : "jackson-databind",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-databind\\2.6.7.3\\jackson-databind-2.6.7.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.xerial.snappy",
+                    "name" : "snappy-java",
+                    "version" : "1.1.7.3",
+                    "artifacts" : [
+                        {
+                            "name" : "snappy-java",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\xerial\\snappy\\snappy-java\\1.1.7.3\\snappy-java-1.1.7.3.jar"
+                        },
+                        {
+                            "name" : "snappy-java",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\xerial\\snappy\\snappy-java\\1.1.7.3\\snappy-java-1.1.7.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.jersey.core",
+                    "name" : "jersey-client",
+                    "version" : "2.22.2",
+                    "artifacts" : [
+                        {
+                            "name" : "jersey-client",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\core\\jersey-client\\2.22.2\\jersey-client-2.22.2.jar"
+                        },
+                        {
+                            "name" : "jersey-client",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\core\\jersey-client\\2.22.2\\jersey-client-2.22.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.jersey.media",
+                    "name" : "jersey-media-jaxb",
+                    "version" : "2.22.2",
+                    "artifacts" : [
+                        {
+                            "name" : "jersey-media-jaxb",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\media\\jersey-media-jaxb\\2.22.2\\jersey-media-jaxb-2.22.2.jar"
+                        },
+                        {
+                            "name" : "jersey-media-jaxb",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\media\\jersey-media-jaxb\\2.22.2\\jersey-media-jaxb-2.22.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.parquet",
+                    "name" : "parquet-common",
+                    "version" : "1.10.1",
+                    "artifacts" : [
+                        {
+                            "name" : "parquet-common",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\parquet\\parquet-common\\1.10.1\\parquet-common-1.10.1.jar"
+                        },
+                        {
+                            "name" : "parquet-common",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\parquet\\parquet-common\\1.10.1\\parquet-common-1.10.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.jersey.containers",
+                    "name" : "jersey-container-servlet",
+                    "version" : "2.22.2",
+                    "artifacts" : [
+                        {
+                            "name" : "jersey-container-servlet",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\containers\\jersey-container-servlet\\2.22.2\\jersey-container-servlet-2.22.2.jar"
+                        },
+                        {
+                            "name" : "jersey-container-servlet",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\containers\\jersey-container-servlet\\2.22.2\\jersey-container-servlet-2.22.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-collections",
+                    "name" : "commons-collections",
+                    "version" : "3.2.2",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-collections",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-collections\\commons-collections\\3.2.2\\commons-collections-3.2.2.jar"
+                        },
+                        {
+                            "name" : "commons-collections",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-collections\\commons-collections\\3.2.2\\commons-collections-3.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.specs2",
+                    "name" : "specs2-matcher_2.11",
+                    "version" : "4.2.0",
+                    "artifacts" : [
+                        {
+                            "name" : "specs2-matcher_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\specs2\\specs2-matcher_2.11\\4.2.0\\specs2-matcher_2.11-4.2.0.jar"
+                        },
+                        {
+                            "name" : "specs2-matcher_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\specs2\\specs2-matcher_2.11\\4.2.0\\specs2-matcher_2.11-4.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.curator",
+                    "name" : "curator-recipes",
+                    "version" : "2.6.0",
+                    "artifacts" : [
+                        {
+                            "name" : "curator-recipes",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\curator\\curator-recipes\\2.6.0\\curator-recipes-2.6.0.jar"
+                        },
+                        {
+                            "name" : "curator-recipes",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\curator\\curator-recipes\\2.6.0\\curator-recipes-2.6.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.codehaus.janino",
+                    "name" : "janino",
+                    "version" : "3.0.9",
+                    "artifacts" : [
+                        {
+                            "name" : "janino",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\codehaus\\janino\\janino\\3.0.9\\janino-3.0.9.jar"
+                        },
+                        {
+                            "name" : "janino",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\codehaus\\janino\\janino\\3.0.9\\janino-3.0.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.jersey.core",
+                    "name" : "jersey-common",
+                    "version" : "2.22.2",
+                    "artifacts" : [
+                        {
+                            "name" : "jersey-common",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\core\\jersey-common\\2.22.2\\jersey-common-2.22.2.jar"
+                        },
+                        {
+                            "name" : "jersey-common",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\core\\jersey-common\\2.22.2\\jersey-common-2.22.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.hadoop",
+                    "name" : "hadoop-mapreduce-client-shuffle",
+                    "version" : "2.6.5",
+                    "artifacts" : [
+                        {
+                            "name" : "hadoop-mapreduce-client-shuffle",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-mapreduce-client-shuffle\\2.6.5\\hadoop-mapreduce-client-shuffle-2.6.5.jar"
+                        },
+                        {
+                            "name" : "hadoop-mapreduce-client-shuffle",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-mapreduce-client-shuffle\\2.6.5\\hadoop-mapreduce-client-shuffle-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.zookeeper",
+                    "name" : "zookeeper",
+                    "version" : "3.4.6",
+                    "artifacts" : [
+                        {
+                            "name" : "zookeeper",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\zookeeper\\zookeeper\\3.4.6\\zookeeper-3.4.6.jar"
+                        },
+                        {
+                            "name" : "zookeeper",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\zookeeper\\zookeeper\\3.4.6\\zookeeper-3.4.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "javax.ws.rs",
+                    "name" : "javax.ws.rs-api",
+                    "version" : "2.0.1",
+                    "artifacts" : [
+                        {
+                            "name" : "javax.ws.rs-api",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\javax\\ws\\rs\\javax.ws.rs-api\\2.0.1\\javax.ws.rs-api-2.0.1.jar"
+                        },
+                        {
+                            "name" : "javax.ws.rs-api",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\javax\\ws\\rs\\javax.ws.rs-api\\2.0.1\\javax.ws.rs-api-2.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "javax.xml.stream",
+                    "name" : "stax-api",
+                    "version" : "1.0-2",
+                    "artifacts" : [
+                        {
+                            "name" : "stax-api",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\javax\\xml\\stream\\stax-api\\1.0-2\\stax-api-1.0-2.jar"
+                        },
+                        {
+                            "name" : "stax-api",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\javax\\xml\\stream\\stax-api\\1.0-2\\stax-api-1.0-2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.orc",
+                    "name" : "orc-core",
+                    "version" : "1.5.5",
+                    "artifacts" : [
+                        {
+                            "name" : "orc-core",
+                            "classifier" : "nohive",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\orc\\orc-core\\1.5.5\\orc-core-1.5.5-nohive.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.commons",
+                    "name" : "commons-lang3",
+                    "version" : "3.5",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-lang3",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\commons\\commons-lang3\\3.5\\commons-lang3-3.5.jar"
+                        },
+                        {
+                            "name" : "commons-lang3",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\commons\\commons-lang3\\3.5\\commons-lang3-3.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.module",
+                    "name" : "jackson-module-scala_2.11",
+                    "version" : "2.6.7.1",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-module-scala_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\fasterxml\\jackson\\module\\jackson-module-scala_2.11\\2.6.7.1\\jackson-module-scala_2.11-2.6.7.1.jar"
+                        },
+                        {
+                            "name" : "jackson-module-scala_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\fasterxml\\jackson\\module\\jackson-module-scala_2.11\\2.6.7.1\\jackson-module-scala_2.11-2.6.7.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.github.luben",
+                    "name" : "zstd-jni",
+                    "version" : "1.4.4-7",
+                    "artifacts" : [
+                        {
+                            "name" : "zstd-jni",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\github\\luben\\zstd-jni\\1.4.4-7\\zstd-jni-1.4.4-7.jar"
+                        },
+                        {
+                            "name" : "zstd-jni",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\github\\luben\\zstd-jni\\1.4.4-7\\zstd-jni-1.4.4-7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.spark",
+                    "name" : "spark-sql-kafka-0-10_2.11",
+                    "version" : "2.4.5",
+                    "artifacts" : [
+                        {
+                            "name" : "spark-sql-kafka-0-10_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-sql-kafka-0-10_2.11\\2.4.5\\spark-sql-kafka-0-10_2.11-2.4.5.jar"
+                        },
+                        {
+                            "name" : "spark-sql-kafka-0-10_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-sql-kafka-0-10_2.11\\2.4.5\\spark-sql-kafka-0-10_2.11-2.4.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.ibm.icu",
+                    "name" : "icu4j",
+                    "version" : "58.2",
+                    "artifacts" : [
+                        {
+                            "name" : "icu4j",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\ibm\\icu\\icu4j\\58.2\\icu4j-58.2.jar"
+                        },
+                        {
+                            "name" : "icu4j",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\ibm\\icu\\icu4j\\58.2\\icu4j-58.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.hadoop",
+                    "name" : "hadoop-hdfs",
+                    "version" : "2.6.5",
+                    "artifacts" : [
+                        {
+                            "name" : "hadoop-hdfs",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-hdfs\\2.6.5\\hadoop-hdfs-2.6.5.jar"
+                        },
+                        {
+                            "name" : "hadoop-hdfs",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-hdfs\\2.6.5\\hadoop-hdfs-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.javassist",
+                    "name" : "javassist",
+                    "version" : "3.18.1-GA",
+                    "artifacts" : [
+                        {
+                            "name" : "javassist",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\javassist\\javassist\\3.18.1-GA\\javassist-3.18.1-GA.jar"
+                        },
+                        {
+                            "name" : "javassist",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\javassist\\javassist\\3.18.1-GA\\javassist-3.18.1-GA-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.spark",
+                    "name" : "spark-sql_2.11",
+                    "version" : "2.4.5",
+                    "artifacts" : [
+                        {
+                            "name" : "spark-sql_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-sql_2.11\\2.4.5\\spark-sql_2.11-2.4.5.jar"
+                        },
+                        {
+                            "name" : "spark-sql_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-sql_2.11\\2.4.5\\spark-sql_2.11-2.4.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-net",
+                    "name" : "commons-net",
+                    "version" : "3.1",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-net",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-net\\commons-net\\3.1\\commons-net-3.1.jar"
+                        },
+                        {
+                            "name" : "commons-net",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-net\\commons-net\\3.1\\commons-net-3.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.hamcrest",
+                    "name" : "hamcrest-core",
+                    "version" : "1.3",
+                    "artifacts" : [
+                        {
+                            "name" : "hamcrest-core",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3.jar"
+                        },
+                        {
+                            "name" : "hamcrest-core",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.3\\hamcrest-core-1.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.objenesis",
+                    "name" : "objenesis",
+                    "version" : "2.5.1",
+                    "artifacts" : [
+                        {
+                            "name" : "objenesis",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\objenesis\\objenesis\\2.5.1\\objenesis-2.5.1.jar"
+                        },
+                        {
+                            "name" : "objenesis",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\objenesis\\objenesis\\2.5.1\\objenesis-2.5.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.dropwizard.metrics",
+                    "name" : "metrics-graphite",
+                    "version" : "3.1.5",
+                    "artifacts" : [
+                        {
+                            "name" : "metrics-graphite",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\io\\dropwizard\\metrics\\metrics-graphite\\3.1.5\\metrics-graphite-3.1.5.jar"
+                        },
+                        {
+                            "name" : "metrics-graphite",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\io\\dropwizard\\metrics\\metrics-graphite\\3.1.5\\metrics-graphite-3.1.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.specs2",
+                    "name" : "specs2-common_2.11",
+                    "version" : "4.2.0",
+                    "artifacts" : [
+                        {
+                            "name" : "specs2-common_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\specs2\\specs2-common_2.11\\4.2.0\\specs2-common_2.11-4.2.0.jar"
+                        },
+                        {
+                            "name" : "specs2-common_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\specs2\\specs2-common_2.11\\4.2.0\\specs2-common_2.11-4.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish",
+                    "name" : "javax.json",
+                    "version" : "1.0.4",
+                    "artifacts" : [
+                        {
+                            "name" : "javax.json",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\javax.json\\1.0.4\\javax.json-1.0.4.jar"
+                        },
+                        {
+                            "name" : "javax.json",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\javax.json\\1.0.4\\javax.json-1.0.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.spark",
+                    "name" : "spark-catalyst_2.11",
+                    "version" : "2.4.5",
+                    "artifacts" : [
+                        {
+                            "name" : "spark-catalyst_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-catalyst_2.11\\2.4.5\\spark-catalyst_2.11-2.4.5.jar"
+                        },
+                        {
+                            "name" : "spark-catalyst_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-catalyst_2.11\\2.4.5\\spark-catalyst_2.11-2.4.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.hadoop",
+                    "name" : "hadoop-auth",
+                    "version" : "2.6.5",
+                    "artifacts" : [
+                        {
+                            "name" : "hadoop-auth",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-auth\\2.6.5\\hadoop-auth-2.6.5.jar"
+                        },
+                        {
+                            "name" : "hadoop-auth",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-auth\\2.6.5\\hadoop-auth-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.spark",
+                    "name" : "spark-network-common_2.11",
+                    "version" : "2.4.5",
+                    "artifacts" : [
+                        {
+                            "name" : "spark-network-common_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-network-common_2.11\\2.4.5\\spark-network-common_2.11-2.4.5.jar"
+                        },
+                        {
+                            "name" : "spark-network-common_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-network-common_2.11\\2.4.5\\spark-network-common_2.11-2.4.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.netty",
+                    "name" : "netty-all",
+                    "version" : "4.1.42.Final",
+                    "artifacts" : [
+                        {
+                            "name" : "netty-all",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\io\\netty\\netty-all\\4.1.42.Final\\netty-all-4.1.42.Final.jar"
+                        },
+                        {
+                            "name" : "netty-all",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\io\\netty\\netty-all\\4.1.42.Final\\netty-all-4.1.42.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.hadoop",
+                    "name" : "hadoop-yarn-common",
+                    "version" : "2.6.5",
+                    "artifacts" : [
+                        {
+                            "name" : "hadoop-yarn-common",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-yarn-common\\2.6.5\\hadoop-yarn-common-2.6.5.jar"
+                        },
+                        {
+                            "name" : "hadoop-yarn-common",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-yarn-common\\2.6.5\\hadoop-yarn-common-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.code.findbugs",
+                    "name" : "jsr305",
+                    "version" : "1.3.9",
+                    "artifacts" : [
+                        {
+                            "name" : "jsr305",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\google\\code\\findbugs\\jsr305\\1.3.9\\jsr305-1.3.9.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "javax.xml.bind",
+                    "name" : "jaxb-api",
+                    "version" : "2.2.2",
+                    "artifacts" : [
+                        {
+                            "name" : "jaxb-api",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\javax\\xml\\bind\\jaxb-api\\2.2.2\\jaxb-api-2.2.2.jar"
+                        },
+                        {
+                            "name" : "jaxb-api",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\javax\\xml\\bind\\jaxb-api\\2.2.2\\jaxb-api-2.2.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.spark",
+                    "name" : "spark-core_2.11",
+                    "version" : "2.4.5",
+                    "artifacts" : [
+                        {
+                            "name" : "spark-core_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-core_2.11\\2.4.5\\spark-core_2.11-2.4.5.jar"
+                        },
+                        {
+                            "name" : "spark-core_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-core_2.11\\2.4.5\\spark-core_2.11-2.4.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.hk2",
+                    "name" : "hk2-locator",
+                    "version" : "2.4.0-b34",
+                    "artifacts" : [
+                        {
+                            "name" : "hk2-locator",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\hk2\\hk2-locator\\2.4.0-b34\\hk2-locator-2.4.0-b34.jar"
+                        },
+                        {
+                            "name" : "hk2-locator",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\hk2\\hk2-locator\\2.4.0-b34\\hk2-locator-2.4.0-b34-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.jersey.core",
+                    "name" : "jersey-server",
+                    "version" : "2.22.2",
+                    "artifacts" : [
+                        {
+                            "name" : "jersey-server",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\core\\jersey-server\\2.22.2\\jersey-server-2.22.2.jar"
+                        },
+                        {
+                            "name" : "jersey-server",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\core\\jersey-server\\2.22.2\\jersey-server-2.22.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.guava",
+                    "name" : "guava",
+                    "version" : "16.0.1",
+                    "artifacts" : [
+                        {
+                            "name" : "guava",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\google\\guava\\guava\\16.0.1\\guava-16.0.1.jar"
+                        },
+                        {
+                            "name" : "guava",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\google\\guava\\guava\\16.0.1\\guava-16.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "net.sf.py4j",
+                    "name" : "py4j",
+                    "version" : "0.10.7",
+                    "artifacts" : [
+                        {
+                            "name" : "py4j",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\net\\sf\\py4j\\py4j\\0.10.7\\py4j-0.10.7.jar"
+                        },
+                        {
+                            "name" : "py4j",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\net\\sf\\py4j\\py4j\\0.10.7\\py4j-0.10.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.hk2.external",
+                    "name" : "javax.inject",
+                    "version" : "2.4.0-b34",
+                    "artifacts" : [
+                        {
+                            "name" : "javax.inject",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\hk2\\external\\javax.inject\\2.4.0-b34\\javax.inject-2.4.0-b34.jar"
+                        },
+                        {
+                            "name" : "javax.inject",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\hk2\\external\\javax.inject\\2.4.0-b34\\javax.inject-2.4.0-b34-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.vlkan",
+                    "name" : "flatbuffers",
+                    "version" : "1.2.0-3f79e055",
+                    "artifacts" : [
+                        {
+                            "name" : "flatbuffers",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\vlkan\\flatbuffers\\1.2.0-3f79e055\\flatbuffers-1.2.0-3f79e055.jar"
+                        },
+                        {
+                            "name" : "flatbuffers",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\vlkan\\flatbuffers\\1.2.0-3f79e055\\flatbuffers-1.2.0-3f79e055-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.hadoop",
+                    "name" : "hadoop-common",
+                    "version" : "2.6.5",
+                    "artifacts" : [
+                        {
+                            "name" : "hadoop-common",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-common\\2.6.5\\hadoop-common-2.6.5.jar"
+                        },
+                        {
+                            "name" : "hadoop-common",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-common\\2.6.5\\hadoop-common-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.antlr",
+                    "name" : "ST4",
+                    "version" : "4.0.8",
+                    "artifacts" : [
+                        {
+                            "name" : "ST4",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\antlr\\ST4\\4.0.8\\ST4-4.0.8.jar"
+                        },
+                        {
+                            "name" : "ST4",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\antlr\\ST4\\4.0.8\\ST4-4.0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.spark",
+                    "name" : "spark-kvstore_2.11",
+                    "version" : "2.4.5",
+                    "artifacts" : [
+                        {
+                            "name" : "spark-kvstore_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-kvstore_2.11\\2.4.5\\spark-kvstore_2.11-2.4.5.jar"
+                        },
+                        {
+                            "name" : "spark-kvstore_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-kvstore_2.11\\2.4.5\\spark-kvstore_2.11-2.4.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.commons",
+                    "name" : "commons-compress",
+                    "version" : "1.8.1",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-compress",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\commons\\commons-compress\\1.8.1\\commons-compress-1.8.1.jar"
+                        },
+                        {
+                            "name" : "commons-compress",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\commons\\commons-compress\\1.8.1\\commons-compress-1.8.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.esotericsoftware",
+                    "name" : "minlog",
+                    "version" : "1.3.0",
+                    "artifacts" : [
+                        {
+                            "name" : "minlog",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\esotericsoftware\\minlog\\1.3.0\\minlog-1.3.0.jar"
+                        },
+                        {
+                            "name" : "minlog",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\esotericsoftware\\minlog\\1.3.0\\minlog-1.3.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.codehaus.jackson",
+                    "name" : "jackson-xc",
+                    "version" : "1.9.13",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-xc",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\codehaus\\jackson\\jackson-xc\\1.9.13\\jackson-xc-1.9.13.jar"
+                        },
+                        {
+                            "name" : "jackson-xc",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\codehaus\\jackson\\jackson-xc\\1.9.13\\jackson-xc-1.9.13-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.hadoop",
+                    "name" : "hadoop-annotations",
+                    "version" : "2.6.5",
+                    "artifacts" : [
+                        {
+                            "name" : "hadoop-annotations",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-annotations\\2.6.5\\hadoop-annotations-2.6.5.jar"
+                        },
+                        {
+                            "name" : "hadoop-annotations",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-annotations\\2.6.5\\hadoop-annotations-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.json4s",
+                    "name" : "json4s-scalap_2.11",
+                    "version" : "3.5.3",
+                    "artifacts" : [
+                        {
+                            "name" : "json4s-scalap_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\json4s\\json4s-scalap_2.11\\3.5.3\\json4s-scalap_2.11-3.5.3.jar"
+                        },
+                        {
+                            "name" : "json4s-scalap_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\json4s\\json4s-scalap_2.11\\3.5.3\\json4s-scalap_2.11-3.5.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.slf4j",
+                    "name" : "slf4j-log4j12",
+                    "version" : "1.7.16",
+                    "artifacts" : [
+                        {
+                            "name" : "slf4j-log4j12",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\slf4j\\slf4j-log4j12\\1.7.16\\slf4j-log4j12-1.7.16.jar"
+                        },
+                        {
+                            "name" : "slf4j-log4j12",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\slf4j\\slf4j-log4j12\\1.7.16\\slf4j-log4j12-1.7.16-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.hadoop",
+                    "name" : "hadoop-yarn-client",
+                    "version" : "2.6.5",
+                    "artifacts" : [
+                        {
+                            "name" : "hadoop-yarn-client",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-yarn-client\\2.6.5\\hadoop-yarn-client-2.6.5.jar"
+                        },
+                        {
+                            "name" : "hadoop-yarn-client",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-yarn-client\\2.6.5\\hadoop-yarn-client-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.parquet",
+                    "name" : "parquet-hadoop",
+                    "version" : "1.10.1",
+                    "artifacts" : [
+                        {
+                            "name" : "parquet-hadoop",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\parquet\\parquet-hadoop\\1.10.1\\parquet-hadoop-1.10.1.jar"
+                        },
+                        {
+                            "name" : "parquet-hadoop",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\parquet\\parquet-hadoop\\1.10.1\\parquet-hadoop-1.10.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.orc",
+                    "name" : "orc-shims",
+                    "version" : "1.5.5",
+                    "artifacts" : [
+                        {
+                            "name" : "orc-shims",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\orc\\orc-shims\\1.5.5\\orc-shims-1.5.5.jar"
+                        },
+                        {
+                            "name" : "orc-shims",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\orc\\orc-shims\\1.5.5\\orc-shims-1.5.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.orc",
+                    "name" : "orc-mapreduce",
+                    "version" : "1.5.5",
+                    "artifacts" : [
+                        {
+                            "name" : "orc-mapreduce",
+                            "classifier" : "nohive",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\orc\\orc-mapreduce\\1.5.5\\orc-mapreduce-1.5.5-nohive.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.lz4",
+                    "name" : "lz4-java",
+                    "version" : "1.7.1",
+                    "artifacts" : [
+                        {
+                            "name" : "lz4-java",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\lz4\\lz4-java\\1.7.1\\lz4-java-1.7.1.jar"
+                        },
+                        {
+                            "name" : "lz4-java",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\lz4\\lz4-java\\1.7.1\\lz4-java-1.7.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "xml-apis",
+                    "name" : "xml-apis",
+                    "version" : "1.3.04",
+                    "artifacts" : [
+                        {
+                            "name" : "xml-apis",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\xml-apis\\xml-apis\\1.3.04\\xml-apis-1.3.04.jar"
+                        },
+                        {
+                            "name" : "xml-apis",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\xml-apis\\xml-apis\\1.3.04\\xml-apis-1.3.04-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.slf4j",
+                    "name" : "jcl-over-slf4j",
+                    "version" : "1.7.16",
+                    "artifacts" : [
+                        {
+                            "name" : "jcl-over-slf4j",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\slf4j\\jcl-over-slf4j\\1.7.16\\jcl-over-slf4j-1.7.16.jar"
+                        },
+                        {
+                            "name" : "jcl-over-slf4j",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\slf4j\\jcl-over-slf4j\\1.7.16\\jcl-over-slf4j-1.7.16-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-io",
+                    "name" : "commons-io",
+                    "version" : "2.4",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-io",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-io\\commons-io\\2.4\\commons-io-2.4.jar"
+                        },
+                        {
+                            "name" : "commons-io",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-io\\commons-io\\2.4\\commons-io-2.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-configuration",
+                    "name" : "commons-configuration",
+                    "version" : "1.6",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-configuration",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-configuration\\commons-configuration\\1.6\\commons-configuration-1.6.jar"
+                        },
+                        {
+                            "name" : "commons-configuration",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-configuration\\commons-configuration\\1.6\\commons-configuration-1.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.core",
+                    "name" : "jackson-annotations",
+                    "version" : "2.6.0",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-annotations",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.6.0\\jackson-annotations-2.6.0.jar"
+                        },
+                        {
+                            "name" : "jackson-annotations",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-annotations\\2.6.0\\jackson-annotations-2.6.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "javax.validation",
+                    "name" : "validation-api",
+                    "version" : "1.1.0.Final",
+                    "artifacts" : [
+                        {
+                            "name" : "validation-api",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\javax\\validation\\validation-api\\1.1.0.Final\\validation-api-1.1.0.Final.jar"
+                        },
+                        {
+                            "name" : "validation-api",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\javax\\validation\\validation-api\\1.1.0.Final\\validation-api-1.1.0.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.antlr",
+                    "name" : "antlr4-runtime",
+                    "version" : "4.7",
+                    "artifacts" : [
+                        {
+                            "name" : "antlr4-runtime",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\antlr\\antlr4-runtime\\4.7\\antlr4-runtime-4.7.jar"
+                        },
+                        {
+                            "name" : "antlr4-runtime",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\antlr\\antlr4-runtime\\4.7\\antlr4-runtime-4.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.clearspring.analytics",
+                    "name" : "stream",
+                    "version" : "2.7.0",
+                    "artifacts" : [
+                        {
+                            "name" : "stream",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\clearspring\\analytics\\stream\\2.7.0\\stream-2.7.0.jar"
+                        },
+                        {
+                            "name" : "stream",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\clearspring\\analytics\\stream\\2.7.0\\stream-2.7.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-reflect",
+                    "version" : "2.11.12",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-reflect",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\scala-reflect\\2.11.12\\scala-reflect-2.11.12.jar"
+                        },
+                        {
+                            "name" : "scala-reflect",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\scala-reflect\\2.11.12\\scala-reflect-2.11.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-sbt",
+                    "name" : "test-interface",
+                    "version" : "1.0",
+                    "artifacts" : [
+                        {
+                            "name" : "test-interface",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0.jar"
+                        },
+                        {
+                            "name" : "test-interface",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-sbt\\test-interface\\1.0\\test-interface-1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "javax.activation",
+                    "name" : "activation",
+                    "version" : "1.1.1",
+                    "artifacts" : [
+                        {
+                            "name" : "activation",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\javax\\activation\\activation\\1.1.1\\activation-1.1.1.jar"
+                        },
+                        {
+                            "name" : "activation",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\javax\\activation\\activation\\1.1.1\\activation-1.1.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.ning",
+                    "name" : "compress-lzf",
+                    "version" : "1.0.3",
+                    "artifacts" : [
+                        {
+                            "name" : "compress-lzf",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\ning\\compress-lzf\\1.0.3\\compress-lzf-1.0.3.jar"
+                        },
+                        {
+                            "name" : "compress-lzf",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\ning\\compress-lzf\\1.0.3\\compress-lzf-1.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.roaringbitmap",
+                    "name" : "shims",
+                    "version" : "0.7.45",
+                    "artifacts" : [
+                        {
+                            "name" : "shims",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\roaringbitmap\\shims\\0.7.45\\shims-0.7.45.jar"
+                        },
+                        {
+                            "name" : "shims",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\roaringbitmap\\shims\\0.7.45\\shims-0.7.45-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.codehaus.jackson",
+                    "name" : "jackson-mapper-asl",
+                    "version" : "1.9.13",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-mapper-asl",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\codehaus\\jackson\\jackson-mapper-asl\\1.9.13\\jackson-mapper-asl-1.9.13.jar"
+                        },
+                        {
+                            "name" : "jackson-mapper-asl",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\codehaus\\jackson\\jackson-mapper-asl\\1.9.13\\jackson-mapper-asl-1.9.13-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "net.razorvine",
+                    "name" : "pyrolite",
+                    "version" : "4.13",
+                    "artifacts" : [
+                        {
+                            "name" : "pyrolite",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\net\\razorvine\\pyrolite\\4.13\\pyrolite-4.13.jar"
+                        },
+                        {
+                            "name" : "pyrolite",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\net\\razorvine\\pyrolite\\4.13\\pyrolite-4.13-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.roaringbitmap",
+                    "name" : "RoaringBitmap",
+                    "version" : "0.7.45",
+                    "artifacts" : [
+                        {
+                            "name" : "RoaringBitmap",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\roaringbitmap\\RoaringBitmap\\0.7.45\\RoaringBitmap-0.7.45.jar"
+                        },
+                        {
+                            "name" : "RoaringBitmap",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\roaringbitmap\\RoaringBitmap\\0.7.45\\RoaringBitmap-0.7.45-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.curator",
+                    "name" : "curator-client",
+                    "version" : "2.6.0",
+                    "artifacts" : [
+                        {
+                            "name" : "curator-client",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\curator\\curator-client\\2.6.0\\curator-client-2.6.0.jar"
+                        },
+                        {
+                            "name" : "curator-client",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\curator\\curator-client\\2.6.0\\curator-client-2.6.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.arrow",
+                    "name" : "arrow-memory",
+                    "version" : "0.10.0",
+                    "artifacts" : [
+                        {
+                            "name" : "arrow-memory",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\arrow\\arrow-memory\\0.10.0\\arrow-memory-0.10.0.jar"
+                        },
+                        {
+                            "name" : "arrow-memory",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\arrow\\arrow-memory\\0.10.0\\arrow-memory-0.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.univocity",
+                    "name" : "univocity-parsers",
+                    "version" : "2.7.3",
+                    "artifacts" : [
+                        {
+                            "name" : "univocity-parsers",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\univocity\\univocity-parsers\\2.7.3\\univocity-parsers-2.7.3.jar"
+                        },
+                        {
+                            "name" : "univocity-parsers",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\univocity\\univocity-parsers\\2.7.3\\univocity-parsers-2.7.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.curator",
+                    "name" : "curator-framework",
+                    "version" : "2.6.0",
+                    "artifacts" : [
+                        {
+                            "name" : "curator-framework",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\curator\\curator-framework\\2.6.0\\curator-framework-2.6.0.jar"
+                        },
+                        {
+                            "name" : "curator-framework",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\curator\\curator-framework\\2.6.0\\curator-framework-2.6.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.codehaus.jackson",
+                    "name" : "jackson-jaxrs",
+                    "version" : "1.9.13",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-jaxrs",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\codehaus\\jackson\\jackson-jaxrs\\1.9.13\\jackson-jaxrs-1.9.13.jar"
+                        },
+                        {
+                            "name" : "jackson-jaxrs",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\codehaus\\jackson\\jackson-jaxrs\\1.9.13\\jackson-jaxrs-1.9.13-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.arrow",
+                    "name" : "arrow-format",
+                    "version" : "0.10.0",
+                    "artifacts" : [
+                        {
+                            "name" : "arrow-format",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\arrow\\arrow-format\\0.10.0\\arrow-format-0.10.0.jar"
+                        },
+                        {
+                            "name" : "arrow-format",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\arrow\\arrow-format\\0.10.0\\arrow-format-0.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scalactic",
+                    "name" : "scalactic_2.11",
+                    "version" : "3.0.5",
+                    "artifacts" : [
+                        {
+                            "name" : "scalactic_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\scalactic\\scalactic_2.11\\3.0.5\\scalactic_2.11-3.0.5.jar"
+                        },
+                        {
+                            "name" : "scalactic_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\scalactic\\scalactic_2.11\\3.0.5\\scalactic_2.11-3.0.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.httpcomponents",
+                    "name" : "httpcore",
+                    "version" : "4.2.4",
+                    "artifacts" : [
+                        {
+                            "name" : "httpcore",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\httpcomponents\\httpcore\\4.2.4\\httpcore-4.2.4.jar"
+                        },
+                        {
+                            "name" : "httpcore",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\httpcomponents\\httpcore\\4.2.4\\httpcore-4.2.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.specs2",
+                    "name" : "specs2-core_2.11",
+                    "version" : "4.2.0",
+                    "artifacts" : [
+                        {
+                            "name" : "specs2-core_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\specs2\\specs2-core_2.11\\4.2.0\\specs2-core_2.11-4.2.0.jar"
+                        },
+                        {
+                            "name" : "specs2-core_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\specs2\\specs2-core_2.11\\4.2.0\\specs2-core_2.11-4.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "xmlenc",
+                    "name" : "xmlenc",
+                    "version" : "0.52",
+                    "artifacts" : [
+                        {
+                            "name" : "xmlenc",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\xmlenc\\xmlenc\\0.52\\xmlenc-0.52.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.protobuf",
+                    "name" : "protobuf-java",
+                    "version" : "2.5.0",
+                    "artifacts" : [
+                        {
+                            "name" : "protobuf-java",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\google\\protobuf\\protobuf-java\\2.5.0\\protobuf-java-2.5.0.jar"
+                        },
+                        {
+                            "name" : "protobuf-java",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\google\\protobuf\\protobuf-java\\2.5.0\\protobuf-java-2.5.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.esotericsoftware",
+                    "name" : "kryo-shaded",
+                    "version" : "4.0.2",
+                    "artifacts" : [
+                        {
+                            "name" : "kryo-shaded",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\esotericsoftware\\kryo-shaded\\4.0.2\\kryo-shaded-4.0.2.jar"
+                        },
+                        {
+                            "name" : "kryo-shaded",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\esotericsoftware\\kryo-shaded\\4.0.2\\kryo-shaded-4.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.hadoop",
+                    "name" : "hadoop-mapreduce-client-jobclient",
+                    "version" : "2.6.5",
+                    "artifacts" : [
+                        {
+                            "name" : "hadoop-mapreduce-client-jobclient",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-mapreduce-client-jobclient\\2.6.5\\hadoop-mapreduce-client-jobclient-2.6.5.jar"
+                        },
+                        {
+                            "name" : "hadoop-mapreduce-client-jobclient",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-mapreduce-client-jobclient\\2.6.5\\hadoop-mapreduce-client-jobclient-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.hadoop",
+                    "name" : "hadoop-mapreduce-client-app",
+                    "version" : "2.6.5",
+                    "artifacts" : [
+                        {
+                            "name" : "hadoop-mapreduce-client-app",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-mapreduce-client-app\\2.6.5\\hadoop-mapreduce-client-app-2.6.5.jar"
+                        },
+                        {
+                            "name" : "hadoop-mapreduce-client-app",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-mapreduce-client-app\\2.6.5\\hadoop-mapreduce-client-app-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.airlift",
+                    "name" : "aircompressor",
+                    "version" : "0.10",
+                    "artifacts" : [
+                        {
+                            "name" : "aircompressor",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\io\\airlift\\aircompressor\\0.10\\aircompressor-0.10.jar"
+                        },
+                        {
+                            "name" : "aircompressor",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\io\\airlift\\aircompressor\\0.10\\aircompressor-0.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "joda-time",
+                    "name" : "joda-time",
+                    "version" : "2.9.9",
+                    "artifacts" : [
+                        {
+                            "name" : "joda-time",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\joda-time\\joda-time\\2.9.9\\joda-time-2.9.9.jar"
+                        },
+                        {
+                            "name" : "joda-time",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\joda-time\\joda-time\\2.9.9\\joda-time-2.9.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.thoughtworks.paranamer",
+                    "name" : "paranamer",
+                    "version" : "2.8",
+                    "artifacts" : [
+                        {
+                            "name" : "paranamer",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\thoughtworks\\paranamer\\paranamer\\2.8\\paranamer-2.8.jar"
+                        },
+                        {
+                            "name" : "paranamer",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\thoughtworks\\paranamer\\paranamer\\2.8\\paranamer-2.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.hadoop",
+                    "name" : "hadoop-yarn-api",
+                    "version" : "2.6.5",
+                    "artifacts" : [
+                        {
+                            "name" : "hadoop-yarn-api",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-yarn-api\\2.6.5\\hadoop-yarn-api-2.6.5.jar"
+                        },
+                        {
+                            "name" : "hadoop-yarn-api",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-yarn-api\\2.6.5\\hadoop-yarn-api-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.hadoop",
+                    "name" : "hadoop-yarn-server-common",
+                    "version" : "2.6.5",
+                    "artifacts" : [
+                        {
+                            "name" : "hadoop-yarn-server-common",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-yarn-server-common\\2.6.5\\hadoop-yarn-server-common-2.6.5.jar"
+                        },
+                        {
+                            "name" : "hadoop-yarn-server-common",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-yarn-server-common\\2.6.5\\hadoop-yarn-server-common-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.parquet",
+                    "name" : "parquet-column",
+                    "version" : "1.10.1",
+                    "artifacts" : [
+                        {
+                            "name" : "parquet-column",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\parquet\\parquet-column\\1.10.1\\parquet-column-1.10.1.jar"
+                        },
+                        {
+                            "name" : "parquet-column",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\parquet\\parquet-column\\1.10.1\\parquet-column-1.10.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.parquet",
+                    "name" : "parquet-format",
+                    "version" : "2.4.0",
+                    "artifacts" : [
+                        {
+                            "name" : "parquet-format",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\parquet\\parquet-format\\2.4.0\\parquet-format-2.4.0.jar"
+                        },
+                        {
+                            "name" : "parquet-format",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\parquet\\parquet-format\\2.4.0\\parquet-format-2.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.tukaani",
+                    "name" : "xz",
+                    "version" : "1.5",
+                    "artifacts" : [
+                        {
+                            "name" : "xz",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\tukaani\\xz\\1.5\\xz-1.5.jar"
+                        },
+                        {
+                            "name" : "xz",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\tukaani\\xz\\1.5\\xz-1.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang.modules",
+                    "name" : "scala-xml_2.11",
+                    "version" : "1.0.6",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-xml_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\modules\\scala-xml_2.11\\1.0.6\\scala-xml_2.11-1.0.6.jar"
+                        },
+                        {
+                            "name" : "scala-xml_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\modules\\scala-xml_2.11\\1.0.6\\scala-xml_2.11-1.0.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.avro",
+                    "name" : "avro-mapred",
+                    "version" : "1.8.2",
+                    "artifacts" : [
+                        {
+                            "name" : "avro-mapred",
+                            "classifier" : "hadoop2",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\avro\\avro-mapred\\1.8.2\\avro-mapred-1.8.2-hadoop2.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.spark-project.spark",
+                    "name" : "unused",
+                    "version" : "1.0.0",
+                    "artifacts" : [
+                        {
+                            "name" : "unused",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\spark-project\\spark\\unused\\1.0.0\\unused-1.0.0.jar"
+                        },
+                        {
+                            "name" : "unused",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\spark-project\\spark\\unused\\1.0.0\\unused-1.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.parquet",
+                    "name" : "parquet-encoding",
+                    "version" : "1.10.1",
+                    "artifacts" : [
+                        {
+                            "name" : "parquet-encoding",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\parquet\\parquet-encoding\\1.10.1\\parquet-encoding-1.10.1.jar"
+                        },
+                        {
+                            "name" : "parquet-encoding",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\parquet\\parquet-encoding\\1.10.1\\parquet-encoding-1.10.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.httpcomponents",
+                    "name" : "httpclient",
+                    "version" : "4.2.5",
+                    "artifacts" : [
+                        {
+                            "name" : "httpclient",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\httpcomponents\\httpclient\\4.2.5\\httpclient-4.2.5.jar"
+                        },
+                        {
+                            "name" : "httpclient",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\httpcomponents\\httpclient\\4.2.5\\httpclient-4.2.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.abego.treelayout",
+                    "name" : "org.abego.treelayout.core",
+                    "version" : "1.0.3",
+                    "artifacts" : [
+                        {
+                            "name" : "org.abego.treelayout.core",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\abego\\treelayout\\org.abego.treelayout.core\\1.0.3\\org.abego.treelayout.core-1.0.3.jar"
+                        },
+                        {
+                            "name" : "org.abego.treelayout.core",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\abego\\treelayout\\org.abego.treelayout.core\\1.0.3\\org.abego.treelayout.core-1.0.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-httpclient",
+                    "name" : "commons-httpclient",
+                    "version" : "3.1",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-httpclient",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-httpclient\\commons-httpclient\\3.1\\commons-httpclient-3.1.jar"
+                        },
+                        {
+                            "name" : "commons-httpclient",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-httpclient\\commons-httpclient\\3.1\\commons-httpclient-3.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.avro",
+                    "name" : "avro",
+                    "version" : "1.8.2",
+                    "artifacts" : [
+                        {
+                            "name" : "avro",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\avro\\avro\\1.8.2\\avro-1.8.2.jar"
+                        },
+                        {
+                            "name" : "avro",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\avro\\avro\\1.8.2\\avro-1.8.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.google.code.gson",
+                    "name" : "gson",
+                    "version" : "2.2.4",
+                    "artifacts" : [
+                        {
+                            "name" : "gson",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\google\\code\\gson\\gson\\2.2.4\\gson-2.2.4.jar"
+                        },
+                        {
+                            "name" : "gson",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\google\\code\\gson\\gson\\2.2.4\\gson-2.2.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.slf4j",
+                    "name" : "jul-to-slf4j",
+                    "version" : "1.7.16",
+                    "artifacts" : [
+                        {
+                            "name" : "jul-to-slf4j",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\slf4j\\jul-to-slf4j\\1.7.16\\jul-to-slf4j-1.7.16.jar"
+                        },
+                        {
+                            "name" : "jul-to-slf4j",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\slf4j\\jul-to-slf4j\\1.7.16\\jul-to-slf4j-1.7.16-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-codec",
+                    "name" : "commons-codec",
+                    "version" : "1.10",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-codec",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-codec\\commons-codec\\1.10\\commons-codec-1.10.jar"
+                        },
+                        {
+                            "name" : "commons-codec",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-codec\\commons-codec\\1.10\\commons-codec-1.10-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "log4j",
+                    "name" : "log4j",
+                    "version" : "1.2.17",
+                    "artifacts" : [
+                        {
+                            "name" : "log4j",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\log4j\\log4j\\1.2.17\\log4j-1.2.17.jar"
+                        },
+                        {
+                            "name" : "log4j",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\log4j\\log4j\\1.2.17\\log4j-1.2.17-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.spark",
+                    "name" : "spark-launcher_2.11",
+                    "version" : "2.4.5",
+                    "artifacts" : [
+                        {
+                            "name" : "spark-launcher_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-launcher_2.11\\2.4.5\\spark-launcher_2.11-2.4.5.jar"
+                        },
+                        {
+                            "name" : "spark-launcher_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-launcher_2.11\\2.4.5\\spark-launcher_2.11-2.4.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.directory.server",
+                    "name" : "apacheds-i18n",
+                    "version" : "2.0.0-M15",
+                    "artifacts" : [
+                        {
+                            "name" : "apacheds-i18n",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\directory\\server\\apacheds-i18n\\2.0.0-M15\\apacheds-i18n-2.0.0-M15.jar"
+                        },
+                        {
+                            "name" : "apacheds-i18n",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\directory\\server\\apacheds-i18n\\2.0.0-M15\\apacheds-i18n-2.0.0-M15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.directory.api",
+                    "name" : "api-util",
+                    "version" : "1.0.0-M20",
+                    "artifacts" : [
+                        {
+                            "name" : "api-util",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\directory\\api\\api-util\\1.0.0-M20\\api-util-1.0.0-M20.jar"
+                        },
+                        {
+                            "name" : "api-util",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\directory\\api\\api-util\\1.0.0-M20\\api-util-1.0.0-M20-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.antlr",
+                    "name" : "antlr4",
+                    "version" : "4.7",
+                    "artifacts" : [
+                        {
+                            "name" : "antlr4",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\antlr\\antlr4\\4.7\\antlr4-4.7.jar"
+                        },
+                        {
+                            "name" : "antlr4",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\antlr\\antlr4\\4.7\\antlr4-4.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.parquet",
+                    "name" : "parquet-jackson",
+                    "version" : "1.10.1",
+                    "artifacts" : [
+                        {
+                            "name" : "parquet-jackson",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\parquet\\parquet-jackson\\1.10.1\\parquet-jackson-1.10.1.jar"
+                        },
+                        {
+                            "name" : "parquet-jackson",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\parquet\\parquet-jackson\\1.10.1\\parquet-jackson-1.10.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-cli",
+                    "name" : "commons-cli",
+                    "version" : "1.2",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-cli",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-cli\\commons-cli\\1.2\\commons-cli-1.2.jar"
+                        },
+                        {
+                            "name" : "commons-cli",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-cli\\commons-cli\\1.2\\commons-cli-1.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.hadoop",
+                    "name" : "hadoop-mapreduce-client-core",
+                    "version" : "2.6.5",
+                    "artifacts" : [
+                        {
+                            "name" : "hadoop-mapreduce-client-core",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-mapreduce-client-core\\2.6.5\\hadoop-mapreduce-client-core-2.6.5.jar"
+                        },
+                        {
+                            "name" : "hadoop-mapreduce-client-core",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\hadoop\\hadoop-mapreduce-client-core\\2.6.5\\hadoop-mapreduce-client-core-2.6.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.spark",
+                    "name" : "spark-sketch_2.11",
+                    "version" : "2.4.5",
+                    "artifacts" : [
+                        {
+                            "name" : "spark-sketch_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-sketch_2.11\\2.4.5\\spark-sketch_2.11-2.4.5.jar"
+                        },
+                        {
+                            "name" : "spark-sketch_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-sketch_2.11\\2.4.5\\spark-sketch_2.11-2.4.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.directory.server",
+                    "name" : "apacheds-kerberos-codec",
+                    "version" : "2.0.0-M15",
+                    "artifacts" : [
+                        {
+                            "name" : "apacheds-kerberos-codec",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\directory\\server\\apacheds-kerberos-codec\\2.0.0-M15\\apacheds-kerberos-codec-2.0.0-M15.jar"
+                        },
+                        {
+                            "name" : "apacheds-kerberos-codec",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\directory\\server\\apacheds-kerberos-codec\\2.0.0-M15\\apacheds-kerberos-codec-2.0.0-M15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.directory.api",
+                    "name" : "api-asn1-api",
+                    "version" : "1.0.0-M20",
+                    "artifacts" : [
+                        {
+                            "name" : "api-asn1-api",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\directory\\api\\api-asn1-api\\1.0.0-M20\\api-asn1-api-1.0.0-M20.jar"
+                        },
+                        {
+                            "name" : "api-asn1-api",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\directory\\api\\api-asn1-api\\1.0.0-M20\\api-asn1-api-1.0.0-M20-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang.modules",
+                    "name" : "scala-parser-combinators_2.11",
+                    "version" : "1.1.0",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-parser-combinators_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\modules\\scala-parser-combinators_2.11\\1.1.0\\scala-parser-combinators_2.11-1.1.0.jar"
+                        },
+                        {
+                            "name" : "scala-parser-combinators_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\modules\\scala-parser-combinators_2.11\\1.1.0\\scala-parser-combinators_2.11-1.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.module",
+                    "name" : "jackson-module-paranamer",
+                    "version" : "2.7.9",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-module-paranamer",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\fasterxml\\jackson\\module\\jackson-module-paranamer\\2.7.9\\jackson-module-paranamer-2.7.9.jar"
+                        },
+                        {
+                            "name" : "jackson-module-paranamer",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\fasterxml\\jackson\\module\\jackson-module-paranamer\\2.7.9\\jackson-module-paranamer-2.7.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.twitter",
+                    "name" : "chill-java",
+                    "version" : "0.9.3",
+                    "artifacts" : [
+                        {
+                            "name" : "chill-java",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\twitter\\chill-java\\0.9.3\\chill-java-0.9.3.jar"
+                        },
+                        {
+                            "name" : "chill-java",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\twitter\\chill-java\\0.9.3\\chill-java-0.9.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "junit",
+                    "name" : "junit",
+                    "version" : "4.12",
+                    "artifacts" : [
+                        {
+                            "name" : "junit",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\junit\\junit\\4.12\\junit-4.12.jar"
+                        },
+                        {
+                            "name" : "junit",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\junit\\junit\\4.12\\junit-4.12-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.netty",
+                    "name" : "netty",
+                    "version" : "3.9.9.Final",
+                    "artifacts" : [
+                        {
+                            "name" : "netty",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\io\\netty\\netty\\3.9.9.Final\\netty-3.9.9.Final.jar"
+                        },
+                        {
+                            "name" : "netty",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\io\\netty\\netty\\3.9.9.Final\\netty-3.9.9.Final-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.carrotsearch",
+                    "name" : "hppc",
+                    "version" : "0.7.2",
+                    "artifacts" : [
+                        {
+                            "name" : "hppc",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\carrotsearch\\hppc\\0.7.2\\hppc-0.7.2.jar"
+                        },
+                        {
+                            "name" : "hppc",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\carrotsearch\\hppc\\0.7.2\\hppc-0.7.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "commons-beanutils",
+                    "name" : "commons-beanutils",
+                    "version" : "1.7.0",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-beanutils",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-beanutils\\commons-beanutils\\1.7.0\\commons-beanutils-1.7.0.jar"
+                        },
+                        {
+                            "name" : "commons-beanutils",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\commons-beanutils\\commons-beanutils\\1.7.0\\commons-beanutils-1.7.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.hk2",
+                    "name" : "hk2-api",
+                    "version" : "2.4.0-b34",
+                    "artifacts" : [
+                        {
+                            "name" : "hk2-api",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\hk2\\hk2-api\\2.4.0-b34\\hk2-api-2.4.0-b34.jar"
+                        },
+                        {
+                            "name" : "hk2-api",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\hk2\\hk2-api\\2.4.0-b34\\hk2-api-2.4.0-b34-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scala-lang",
+                    "name" : "scala-library",
+                    "version" : "2.11.6",
+                    "artifacts" : [
+                        {
+                            "name" : "scala-library",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\scala-library\\2.11.6\\scala-library-2.11.6.jar"
+                        },
+                        {
+                            "name" : "scala-library",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\scala-lang\\scala-library\\2.11.6\\scala-library-2.11.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.json4s",
+                    "name" : "json4s-ast_2.11",
+                    "version" : "3.5.3",
+                    "artifacts" : [
+                        {
+                            "name" : "json4s-ast_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\json4s\\json4s-ast_2.11\\3.5.3\\json4s-ast_2.11-3.5.3.jar"
+                        },
+                        {
+                            "name" : "json4s-ast_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\json4s\\json4s-ast_2.11\\3.5.3\\json4s-ast_2.11-3.5.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.twitter",
+                    "name" : "chill_2.11",
+                    "version" : "0.9.3",
+                    "artifacts" : [
+                        {
+                            "name" : "chill_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\twitter\\chill_2.11\\0.9.3\\chill_2.11-0.9.3.jar"
+                        },
+                        {
+                            "name" : "chill_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\twitter\\chill_2.11\\0.9.3\\chill_2.11-0.9.3-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.jersey.bundles.repackaged",
+                    "name" : "jersey-guava",
+                    "version" : "2.22.2",
+                    "artifacts" : [
+                        {
+                            "name" : "jersey-guava",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\bundles\\repackaged\\jersey-guava\\2.22.2\\jersey-guava-2.22.2.jar"
+                        },
+                        {
+                            "name" : "jersey-guava",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\jersey\\bundles\\repackaged\\jersey-guava\\2.22.2\\jersey-guava-2.22.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.mortbay.jetty",
+                    "name" : "jetty-util",
+                    "version" : "6.1.26",
+                    "artifacts" : [
+                        {
+                            "name" : "jetty-util",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\mortbay\\jetty\\jetty-util\\6.1.26\\jetty-util-6.1.26.jar"
+                        },
+                        {
+                            "name" : "jetty-util",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\mortbay\\jetty\\jetty-util\\6.1.26\\jetty-util-6.1.26-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.spark",
+                    "name" : "spark-network-shuffle_2.11",
+                    "version" : "2.4.5",
+                    "artifacts" : [
+                        {
+                            "name" : "spark-network-shuffle_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-network-shuffle_2.11\\2.4.5\\spark-network-shuffle_2.11-2.4.5.jar"
+                        },
+                        {
+                            "name" : "spark-network-shuffle_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\spark\\spark-network-shuffle_2.11\\2.4.5\\spark-network-shuffle_2.11-2.4.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "javax.servlet",
+                    "name" : "javax.servlet-api",
+                    "version" : "3.1.0",
+                    "artifacts" : [
+                        {
+                            "name" : "javax.servlet-api",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\javax\\servlet\\javax.servlet-api\\3.1.0\\javax.servlet-api-3.1.0.jar"
+                        },
+                        {
+                            "name" : "javax.servlet-api",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\javax\\servlet\\javax.servlet-api\\3.1.0\\javax.servlet-api-3.1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.arrow",
+                    "name" : "arrow-vector",
+                    "version" : "0.10.0",
+                    "artifacts" : [
+                        {
+                            "name" : "arrow-vector",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\arrow\\arrow-vector\\0.10.0\\arrow-vector-0.10.0.jar"
+                        },
+                        {
+                            "name" : "arrow-vector",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\arrow\\arrow-vector\\0.10.0\\arrow-vector-0.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.codehaus.janino",
+                    "name" : "commons-compiler",
+                    "version" : "3.0.9",
+                    "artifacts" : [
+                        {
+                            "name" : "commons-compiler",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\codehaus\\janino\\commons-compiler\\3.0.9\\commons-compiler-3.0.9.jar"
+                        },
+                        {
+                            "name" : "commons-compiler",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\codehaus\\janino\\commons-compiler\\3.0.9\\commons-compiler-3.0.9-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.scalatest",
+                    "name" : "scalatest_2.11",
+                    "version" : "3.0.5",
+                    "artifacts" : [
+                        {
+                            "name" : "scalatest_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\scalatest\\scalatest_2.11\\3.0.5\\scalatest_2.11-3.0.5.jar"
+                        },
+                        {
+                            "name" : "scalatest_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\scalatest\\scalatest_2.11\\3.0.5\\scalatest_2.11-3.0.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.hk2.external",
+                    "name" : "aopalliance-repackaged",
+                    "version" : "2.4.0-b34",
+                    "artifacts" : [
+                        {
+                            "name" : "aopalliance-repackaged",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\hk2\\external\\aopalliance-repackaged\\2.4.0-b34\\aopalliance-repackaged-2.4.0-b34.jar"
+                        },
+                        {
+                            "name" : "aopalliance-repackaged",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\hk2\\external\\aopalliance-repackaged\\2.4.0-b34\\aopalliance-repackaged-2.4.0-b34-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.avro",
+                    "name" : "avro-ipc",
+                    "version" : "1.8.2",
+                    "artifacts" : [
+                        {
+                            "name" : "avro-ipc",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\avro\\avro-ipc\\1.8.2\\avro-ipc-1.8.2.jar"
+                        },
+                        {
+                            "name" : "avro-ipc",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\avro\\avro-ipc\\1.8.2\\avro-ipc-1.8.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "xerces",
+                    "name" : "xercesImpl",
+                    "version" : "2.9.1",
+                    "artifacts" : [
+                        {
+                            "name" : "xercesImpl",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\xerces\\xercesImpl\\2.9.1\\xercesImpl-2.9.1.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.apache.ivy",
+                    "name" : "ivy",
+                    "version" : "2.4.0",
+                    "artifacts" : [
+                        {
+                            "name" : "ivy",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\ivy\\ivy\\2.4.0\\ivy-2.4.0.jar"
+                        },
+                        {
+                            "name" : "ivy",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\apache\\ivy\\ivy\\2.4.0\\ivy-2.4.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.antlr",
+                    "name" : "antlr-runtime",
+                    "version" : "3.5.2",
+                    "artifacts" : [
+                        {
+                            "name" : "antlr-runtime",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\antlr\\antlr-runtime\\3.5.2\\antlr-runtime-3.5.2.jar"
+                        },
+                        {
+                            "name" : "antlr-runtime",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\antlr\\antlr-runtime\\3.5.2\\antlr-runtime-3.5.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.dropwizard.metrics",
+                    "name" : "metrics-json",
+                    "version" : "3.1.5",
+                    "artifacts" : [
+                        {
+                            "name" : "metrics-json",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\io\\dropwizard\\metrics\\metrics-json\\3.1.5\\metrics-json-3.1.5.jar"
+                        },
+                        {
+                            "name" : "metrics-json",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\io\\dropwizard\\metrics\\metrics-json\\3.1.5\\metrics-json-3.1.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.hk2",
+                    "name" : "osgi-resource-locator",
+                    "version" : "1.0.1",
+                    "artifacts" : [
+                        {
+                            "name" : "osgi-resource-locator",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\hk2\\osgi-resource-locator\\1.0.1\\osgi-resource-locator-1.0.1.jar"
+                        },
+                        {
+                            "name" : "osgi-resource-locator",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\hk2\\osgi-resource-locator\\1.0.1\\osgi-resource-locator-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.specs2",
+                    "name" : "specs2-junit_2.11",
+                    "version" : "4.2.0",
+                    "artifacts" : [
+                        {
+                            "name" : "specs2-junit_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\specs2\\specs2-junit_2.11\\4.2.0\\specs2-junit_2.11-4.2.0.jar"
+                        },
+                        {
+                            "name" : "specs2-junit_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\specs2\\specs2-junit_2.11\\4.2.0\\specs2-junit_2.11-4.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "com.fasterxml.jackson.core",
+                    "name" : "jackson-core",
+                    "version" : "2.6.7",
+                    "artifacts" : [
+                        {
+                            "name" : "jackson-core",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-core\\2.6.7\\jackson-core-2.6.7.jar"
+                        },
+                        {
+                            "name" : "jackson-core",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\com\\fasterxml\\jackson\\core\\jackson-core\\2.6.7\\jackson-core-2.6.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "org.glassfish.hk2",
+                    "name" : "hk2-utils",
+                    "version" : "2.4.0-b34",
+                    "artifacts" : [
+                        {
+                            "name" : "hk2-utils",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\hk2\\hk2-utils\\2.4.0-b34\\hk2-utils-2.4.0-b34.jar"
+                        },
+                        {
+                            "name" : "hk2-utils",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\org\\glassfish\\hk2\\hk2-utils\\2.4.0-b34\\hk2-utils-2.4.0-b34-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "oro",
+                    "name" : "oro",
+                    "version" : "2.0.8",
+                    "artifacts" : [
+                        {
+                            "name" : "oro",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\oro\\oro\\2.0.8\\oro-2.0.8.jar"
+                        },
+                        {
+                            "name" : "oro",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\oro\\oro\\2.0.8\\oro-2.0.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization" : "io.delta",
+                    "name" : "delta-core_2.11",
+                    "version" : "0.5.0",
+                    "artifacts" : [
+                        {
+                            "name" : "delta-core_2.11",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\io\\delta\\delta-core_2.11\\0.5.0\\delta-core_2.11-0.5.0.jar"
+                        },
+                        {
+                            "name" : "delta-core_2.11",
+                            "classifier" : "sources",
+                            "path" : "C:\\Users\\anildwa\\.m2\\repository\\io\\delta\\delta-core_2.11\\0.5.0\\delta-core_2.11-0.5.0-sources.jar"
+                        }
+                    ]
+                }
+            ]
+        },
+        "tags" : [
+            "library"
+        ]
+    }
+}
