@@ -55,9 +55,37 @@ Azure Data Lake needs to be configured with Storage Account Name and Storage Acc
 ### Running on Azure Synapse Analytics
 Event Hub Stream Processor can also be run on Azure Synapse on Spark pools using Spark Job Definition or using Notebook.
 For Synapse though, the Azure Storage Access key need not be passed as the Azure Data Lake would already be added as a Dataset in the Synapse Workspace. 
+Upload EventHubStreaming.jar to a Azure Data Lake container/filesystem. 
+The Spark Job Definition template is provide below. 
 
 
-    [--class com.anildwa.EventHubStreamProcessor abfss://jars@azure storage.dfs.core.windows.net/EventHubProcessor.jar abfss://streamdata@anildwaadlsv2.dfs.core.windows.net/input delta Endpoint=sb://<eventhubname>.servicebus.windows.net/;SharedAccessKeyName=<SharedAccessKeyName>;SharedAccessKey=<shared access key secret> eventhubtopic]
+    {
+        "targetBigDataPool": {
+            "referenceName": "DefSparkPool",
+            "type": "BigDataPoolReference"
+        },
+        "requiredSparkVersion": "2.4",
+        "language": "scala",
+        "jobProperties": {
+            "name": "Spark job definition 1",
+            "file": "abfss://jars@azuredatalake.dfs.core.windows.net/EventHubStreaming-1.0.0.jar",
+            "className": "com.anildwa.EventHubStreamProcessor",
+            "args": [
+            "abfss://ehstream1@anildwaadlsv2.dfs.core.windows.net/",
+            "delta",
+            "Endpoint=sb://anildwaeventhub1.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=<EventHub Access Key>",
+            "eh1"
+            ],
+            "jars": [],
+            "files": [],
+            "conf": {},
+            "numExecutors": 2,
+            "executorCores": 4,
+            "executorMemory": "28g",
+            "driverCores": 4,
+            "driverMemory": "28g"
+        }
+    }
 
 
 ### Running on Kubernetes
